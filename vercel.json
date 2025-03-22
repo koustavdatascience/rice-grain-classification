@@ -1,10 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index.py" }
-  ],
   "functions": {
-    "api/index.py": {
+    "app.py": {
       "excludeFiles": "{data/**,artifacts/**,static/uploads/**,**/*.keras,**/*.h5,**/*.hdf5}"
     }
   }
