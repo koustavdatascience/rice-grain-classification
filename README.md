@@ -22,7 +22,7 @@ git clone https://github.com/koustavdatascience/rice-grain-classification.git
 cd rice-grain-classification
 git lfs install
 git lfs pull
-pip install -r requirements.txt
+pip install -r requirements-local.txt
 python app.py
 ```
 
@@ -36,8 +36,13 @@ Then open `http://127.0.0.1:5000` in a browser.
 | `templates/index.html` | User interface for image upload and prediction results. |
 | `static/uploads/` | Uploaded-image storage for the local application. |
 | `rice_classifier_model.keras` | Trained Keras model, tracked through Git LFS. |
-| `requirements.txt` | Python dependencies. |
+| `requirements-local.txt` | Full local Python dependencies, including TensorFlow. |
+| `requirements.txt` | Lightweight Vercel interface dependencies. |
 
 ## Notes
 
 The current application is limited to the five varieties listed above. It is an academic project and should be treated as an indicative image-classification tool rather than a certified seed-identification system.
+
+## Vercel Preview
+
+The Vercel deployment serves the polished project interface. Live TensorFlow inference remains a local-only feature until a deployable model artifact and a suitable inference runtime are available. Local model use requires `requirements-local.txt` and `git lfs pull`.
