@@ -4,8 +4,6 @@
 
 | Project detail | Value |
 |---|---|
-| Original project date | 22 March 2025 |
-| Last UI and documentation update | 18 August 2026 |
 | Framework | Python, Flask, Keras, and TensorFlow |
 | Current model scope | Arborio, Basmati, Ipsala, Jasmine, and Karacadag |
 
